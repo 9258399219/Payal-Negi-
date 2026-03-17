@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Multimedia Application</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(-45deg,#141E30,#243B55,#0f2027,#2c5364);
+    background-size:400% 400%;
+    animation: gradientBG 12s ease infinite;
+    color:#fff;
+}
+
+@keyframes gradientBG{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    width:75%;
+    max-width:900px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 25px 50px rgba(0,0,0,0.6);
+    text-align:center;
+    transition:0.5s;
+}
+
+.container:hover{
+    transform:scale(1.02);
+}
+
+h1{
+    margin-bottom:35px;
+    font-size:34px;
+    color:#ffd369;
+    text-shadow:0 0 10px rgba(255,211,105,0.6);
+}
+
+.card{
+    background:rgba(0,0,0,0.4);
+    padding:25px;
+    margin-bottom:30px;
+    border-radius:18px;
+    transition:0.4s;
+}
+
+.card:hover{
+    box-shadow:0 0 25px rgba(0,234,255,0.4);
+}
+
+h2{
+    margin-bottom:15px;
+    color:#00eaff;
+}
+
+audio, video{
+    width:100%;
+    border-radius:15px;
+    outline:none;
+}
+video{
+    height:250px;        
+    object-fit:cover;   
+}
+footer{
+    margin-top:15px;
+    font-size:14px;
+    opacity:0.8;
+}
+
+.glow{
+    color:#ff4b2b;
+    text-shadow:0 0 15px #ff4b2b;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🔥 Multimedia Application  🔥</h1>
+
+    <div class="card">
+        <h2>🎧 Premium Audio</h2>
+        <audio controls>
+            <source src="audio.mpeg" type="audio/mp3">
+        </audio>
+    </div>
+
+    <div class="card">
+        <h2>🎬 HD Video</h2>
+        <video controls poster="thumbnail.jpg">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <footer>
+        Designed with by <span class="glow">Payal Negi</span>
+    </footer>
+</div>
+
+</body>
+</html>
